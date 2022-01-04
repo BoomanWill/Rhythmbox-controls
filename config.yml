@@ -1,0 +1,17 @@
+DesktopEntries:
+  - /usr/share/applications/MusicControls.desktop
+
+Icons:
+  next: ~/.rhythmboxcontrols/images/next.gif
+  previous: ~/.rhythmboxcontrols/images/previous.gif
+  play: ~/.rhythmboxcontrols/images/play.gif
+  pause: ~/.rhythmboxcontrols/images/pause.gif
+  AppIcon: ~/.rhythmboxcontrols/images/AppIcon.png
+
+Code:
+  main: ~/.rhythmboxcontrols/musiccontrols.py
+
+Appearance:
+  transparency: 0.8
+  backgroundcolour: black
+  textcolour: white
