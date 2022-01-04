@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Rhythmbox Controls
+Exec=musiccontrols
+Type=Application
+Terminal=false
+Icon=/home/will/.rhythmboxcontrols/images/AppIcon.png
+NoDisplay=false
