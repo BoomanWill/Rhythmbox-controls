@@ -1,8 +1,6 @@
 #!/bin/bash
 
 pip install tk
-pip install os
-pip install subprocess
 pip install pyyaml
 
 sudo mkdir ~/.rhythmboxcontrols
