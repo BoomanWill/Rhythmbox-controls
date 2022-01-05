@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pip install tk
+sudo apt-get install python3-tk
 pip install pyyaml
 
 sudo mkdir ~/.rhythmboxcontrols
