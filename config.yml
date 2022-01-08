@@ -1,4 +1,4 @@
-DesktopEntries:
+DesktopEntry:
   - /usr/share/applications/MusicControls.desktop
 
 Icons:
@@ -15,3 +15,4 @@ Appearance:
   transparency: 0.8
   backgroundcolour: black
   textcolour: white
+  corner: bottom-left

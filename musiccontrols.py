@@ -19,9 +19,23 @@ window.wm_attributes('-alpha', config['Appearance']['transparency'])
 window.title(string='Rhythmbox Controls')
 window.attributes('-topmost', True)
 hs = window.winfo_screenheight()
+ws = window.winfo_screenwidth()
 h, w = 50, 340
-x, y = 0, hs - h
-window.geometry('%dx%d+%d+%d' % (w, h, x, y))
+bottomright = dict()
+bottomright['coords'] = [ws - w, hs - h]
+topright = dict()
+topright['coords'] = [ws - w, 0]
+bottomleft = dict()
+bottomleft['coords'] = [0, hs - h]
+topleft = dict()
+topleft['coords'] = [0, 0]
+corner = {'bottom-right': bottomright, 'top-right': topright,
+          'bottom-left': bottomleft, 'top-left': topleft}
+
+geometry = (w, h, corner[config['Appearance']['corner']]['coords']
+            [0], corner[config['Appearance']['corner']]['coords'][1])
+
+window.geometry('%dx%d+%d+%d' % geometry)
 window.config(bg=config['Appearance']['backgroundcolour'])
 
 
