@@ -20,7 +20,7 @@ window.title(string='Rhythmbox Controls')
 window.attributes('-topmost', True)
 hs = window.winfo_screenheight()
 h, w = 50, 340
-x, y = 0, hs-h
+x, y = 0, hs - h
 window.geometry('%dx%d+%d+%d' % (w, h, x, y))
 window.config(bg=config['Appearance']['backgroundcolour'])
 
@@ -37,7 +37,7 @@ playpauseindex = 0
 
 # create things
 song = tk.Label(window, text=playing, bg=config['Appearance']
-    ['backgroundcolour'], fg=config['Appearance']['textcolour'])
+                ['backgroundcolour'], fg=config['Appearance']['textcolour'])
 playpause = tk.Button(window, image=playimage, width=20, height=20)
 next = tk.Button(window, image=nextimage, width=20, height=20)
 previous = tk.Button(window, image=previousimage, width=20, height=20)
@@ -81,9 +81,9 @@ previous.bind('<Button-1>', previouspress)
 
 
 # position everything
-next.place(x=190, y=h-26)
-playpause.place(x=160, y=h-26)
-previous.place(x=130, y=h-26)
+next.place(x=190, y=h - 26)
+playpause.place(x=160, y=h - 26)
+previous.place(x=130, y=h - 26)
 song.place(x=0, y=0)
 
 
