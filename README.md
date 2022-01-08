@@ -8,7 +8,7 @@ next and previous song buttons which work with the rhythmbox client.
 ### Instructions
 
 To install:
-1. Download the .zip file
+1. Download and extract the .zip and cd to it
 2. In a terminal, run `sudo chmod +x setup.sh`
 3. Execute setup.sh with `./setup.sh`
 
