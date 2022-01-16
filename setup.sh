@@ -8,5 +8,6 @@ sudo mv images ~/.rhythmboxcontrols
 sudo mv musiccontrols.py ~/.rhythmboxcontrols
 sudo mv config.yml ~/.rhythmboxcontrols
 sudo mv musiccontrols.desktop /usr/share/applications
-sudo mv musiccontrols /usr/bin
-sudo chmod +x /usr/bin/musiccontrols
+sudo mv musiccontrols ~/.rhythmboxcontrols
+sudo chmod +x ~/.rhythmboxcontrols/musiccontrols
+sudo ln -s ~/.rhythmboxcontrols/musiccontrols musiccontrols
