@@ -10,6 +10,7 @@ Icons:
 
 Code:
   main: ~/.rhythmboxcontrols/musiccontrols.py
+  shell script: /usr/bin/musiccontrols
 
 Appearance:
   transparency: 0.8
