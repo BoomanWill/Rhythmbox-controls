@@ -8,8 +8,6 @@ import yaml
 user = subprocess.getoutput('whoami')
 config_path = f"/home/{user}/.rhythmboxcontrols/config.yml"
 
-
-
 with open(config_path) as conf:
     config = yaml.load(conf, Loader=yaml.FullLoader)
 
