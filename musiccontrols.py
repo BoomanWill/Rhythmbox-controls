@@ -5,8 +5,10 @@ import os
 import subprocess
 import yaml
 
-absolute_path = os.path.dirname(os.path.abspath(__file__))
-config_path = os.path.join(absolute_path, 'config.yml')
+user = subprocess.getoutput('whoami')
+config_path = f"/home/{user}/.rhythmboxcontrols/config.yml"
+
+
 
 with open(config_path) as conf:
     config = yaml.load(conf, Loader=yaml.FullLoader)

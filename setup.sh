@@ -10,4 +10,4 @@ sudo mv config.yml ~/.rhythmboxcontrols
 sudo mv musiccontrols.desktop /usr/share/applications
 sudo mv musiccontrols ~/.rhythmboxcontrols
 sudo chmod +x ~/.rhythmboxcontrols/musiccontrols
-sudo ln -s ~/.rhythmboxcontrols/musiccontrols /usr/bin/musiccontrols
+sudo ln -s ~/.rhythmboxcontrols/musiccontrols /usr/local/bin/musiccontrols
